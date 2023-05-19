@@ -29,7 +29,7 @@ console.show()
 
             }
             console.log("已登录，前往学习");    
-            sleep(5000);
+            sleep(8000);
             if (desc("历年培训").exists()) {
                 sleep(2000);  
                 console.log("自动学习视频");
@@ -37,7 +37,7 @@ console.show()
 
             } else {
                 sleep(2000);  
-                console.log("退出循环");
+                console.log("回到个人用户中心，重新启动学习助手");
                 break;
             }
         }
@@ -139,7 +139,13 @@ console.show()
         }
         sleep(1000);
         toastLog("学习完成 ");
+// 循环结束后关闭控制台
 
+console.hide();
+
+// 退出脚本
+
+exit();
     }
 
 
