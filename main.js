@@ -80,14 +80,14 @@ function 打开浏览器进去网站() {
 
 function 循环看视频() {
 
-    sleep(2000);
+    sleep(4000);
     while (true) {
         // 遍历描述控件，找到开始学习按钮并点击 
         var startButton = desc("开始学习").findOne(1000);
         if (startButton) {
             console.log(startButton.click());
             console.log("开始学习")
-            sleep(2000);
+            sleep(3000);
             console.log("等待播放完成不要离开当前页面");
             sleep(2000);
             // 调用函数
@@ -102,7 +102,7 @@ function 循环看视频() {
 
                 log(continueButton.click());
                 console.log("继续学习")
-                sleep(1000);
+                sleep(2000);
                 // 等待15秒 
                 console.log("等待播放完成不要离开当前页面")
 
@@ -122,13 +122,12 @@ function 循环看视频() {
         }
         console.log("返回到视频列表页面 ");
 
-        //back();
-        sleep(2000);
+        sleep(4000);
         // 等待1秒
         className("android.view.View").desc("确定").findOne().click()
         console.log("点击确定 ");
 
-        sleep(3000);
+        
     }
     sleep(1000);
     console.log("学习完成 ");
@@ -183,7 +182,7 @@ function replayAndExit() {
             // 点击退出课程按钮
             var exitBtn = className("android.widget.Button").text("退出课程").findOne();
             exitBtn.click();
-            sleep(2000);
+            sleep(4000);
             // 点击确定按钮
             var confirmBtn = className("android.widget.Button").text("确定").findOne();
             confirmBtn.click();
