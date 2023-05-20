@@ -3,7 +3,7 @@ console.show()
    打开浏览器进去网站()
 
   
-    sleep(4000);
+    sleep(2000);
 
     var isLogin = false;
 
@@ -122,11 +122,11 @@ function 循环看视频() {
         }
         console.log("返回到视频列表页面 ");
 
-        sleep(4000);
+        sleep(2000);
         // 等待1秒
         className("android.view.View").desc("确定").findOne().click()
         console.log("点击确定 ");
-
+sleep(2000);
         
     }
     sleep(1000);
