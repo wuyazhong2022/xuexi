@@ -3,7 +3,7 @@ console.show()
    打开浏览器进去网站()
 
   
-    sleep(2000);
+    sleep(4000);
 
     var isLogin = false;
 
