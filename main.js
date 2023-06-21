@@ -173,7 +173,17 @@ function 打开浏览器进去网站() {
             fInfo("切换UA访问源");
            // log("切换UA访问源");
             // 点击更多按钮
-            className("android.widget.Button").desc("更多").findOne().click();
+            / 找到 "更新浏览器版本" 控件并点击
+var updateBtn = desc("更新浏览器版本").findOne(2000);
+if (updateBtn) {
+    updateBtn.click();
+}
+
+// 找到 "更多" 控件并点击
+var moreBtn = desc("更多").findOne(2000);
+if (moreBtn) {
+    moreBtn.click();
+}
 sleep(1000);
             // 点击工具箱按钮
             className("android.widget.Button").text("工具箱").findOne().click();
